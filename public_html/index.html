@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>jaaroverzicht</title>
+        <title>MtCagenda</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body data-ng-app="MtCagenda">
+        <ul data-ng-controller="NavCtrl">
+            <li><a href="#" data-ng-click="findTemplate('')">home</a></li>
+            <li><a href="#" data-ng-click="findTemplate('year')">jaaroverzicht</a></li>
+            <li><a href="#" data-ng-click="findTemplate('month')">maandoverzicht</a></li>
+            <li><a href="#" data-ng-click="findTemplate('week')">weekoverzicht</a></li>
+            <li><a href="#" data-ng-click="findTemplate('day')">dagoverzicht</a></li>
+        </ul>
+        <div data-ng-view></div>
         <script type="text/javascript" src="js/date/date.extension.js"></script>
         <script type="text/javascript" src="js/date/date.core.js"></script>
         <script type="text/javascript" src="js/vendor/angular.min.js"></script>

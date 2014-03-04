@@ -88,5 +88,27 @@ var MtC = {
         tempDate.setMonth(iMonth);
         tempDate.setDate(0);
         return tempDate.getDate();
+    },
+    
+    getFirstDayOfWeek: function (iWeek) {
+        var d       = new Date(MtC.getYear(), 0, 1),
+            offset  = d.getTimezoneOffset();
+        d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+        d.setTime(d.getTime() + 7 * 24 * 60 * 60 * 1000 * (iWeek + (parseInt(MtC.getYear(),10) === d.getFullYear() ? -1 : 0 )));
+        d.setTime(d.getTime() + (d.getTimezoneOffset() - offset) * 60 * 1000);
+        d.setDate(d.getDate() - 3);
+        return d;
+    },
+    
+    getLastDayOfWeek: function (iWeek) {
+        
+    },
+    
+    getFirstDayOfWeeknumber: function (iWeek) {
+        return MtC.getFirstDayOfWeek(iWeek).getDate();
+    },
+    
+    getMonthOfWeeknumber: function (iWeek) {
+        return MtC.getFirstDayOfWeek(iWeek).getFullYear();
     }
 };

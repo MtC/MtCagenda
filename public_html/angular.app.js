@@ -1,4 +1,4 @@
-angular.module('MtCagenda',['ngRoute'])
+angular.module('MtCworkflow',['ngRoute', 'MtCindex', 'MtCagenda'])
 
     .config(function($locationProvider, $httpProvider, $routeProvider) {
         $httpProvider.defaults.useXDomain = true;
@@ -8,9 +8,22 @@ angular.module('MtCagenda',['ngRoute'])
 		$httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
         $locationProvider.html5Mode(false).hashPrefix('!');
         $routeProvider.
-			when('/:url*', {
+			when('/:app', {
 				templateUrl: function (url) {
-					return 'templates/' + url.url + '.html';
+                    console.log(url.app);
+					return url.app + '/' + url.app + '.html';
+				}
+			}).
+            when('/:app/:sub', {
+				templateUrl: function (url) {
+                    console.log(url.app + ':' + url.sub);
+					return url.app + '/' + url.sub + '/' + url.sub + '.html';
+				}
+			}).
+            when('/:app/:sub/:spec', {
+				templateUrl: function (url) {
+                    console.log(url.app + ':' + url.sub);
+					return url.app + '/' + url.sub + '/' + url.sub + '.html';
 				}
 			}).
 			otherwise({ redirectTo: '/index'});
@@ -20,16 +33,4 @@ angular.module('MtCagenda',['ngRoute'])
         $scope.findTemplate = function (url) {
             $location.path(url);
         };
-    }])
-    
-    .controller('YearCtrl',['$scope', function ($scope) {
-        var Ag          = MtC,
-            month;
-        $scope.days = [];
-        for (month = 1; month <= 12; month = month + 1) {
-            $scope.days[month] = {
-                firstDay:   Ag.getDayOfFirstDay(month),
-                lastDay:    Ag.getLastDayOfMonth(month)
-            };
-        }
     }]);

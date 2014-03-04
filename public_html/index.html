@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MtCagenda</title>
+        <title>MtCworkflow</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/year.css" />
     </head>
-    <body data-ng-app="MtCagenda">
+    <body data-ng-app="MtCworkflow">
         <ul data-ng-controller="NavCtrl">
             <li><a href="#" data-ng-click="findTemplate('')">home</a></li>
-            <li><a href="#" data-ng-click="findTemplate('year')">jaaroverzicht</a></li>
-            <li><a href="#" data-ng-click="findTemplate('month')">maandoverzicht</a></li>
-            <li><a href="#" data-ng-click="findTemplate('week')">weekoverzicht</a></li>
-            <li><a href="#" data-ng-click="findTemplate('day')">dagoverzicht</a></li>
+            <li><a href="#" data-ng-click="findTemplate('agenda')">agenda</a></li>
         </ul>
         <div data-ng-view></div>
         <script type="text/javascript" src="js/date/date.extension.js"></script>
@@ -20,6 +18,9 @@
         <script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
         <script type="text/javascript" src="js/vendor/angular-touch.min.js"></script>
         <script type="text/javascript" src="js/vendor/angular-translate.min.js"></script>
-        <script type="text/javascript" src="js/angular.app.js"></script>
+        <script type="text/javascript" src="angular.app.js"></script>
+        <script type="text/javascript" src="index/angular.index.js"></script>
+        <script type="text/javascript" src="agenda/angular.agenda.js"></script>
+        <script type="text/javascript" src="agenda/calender/angular.calender.js"></script>
     </body>
 </html>

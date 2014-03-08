@@ -1,0 +1,117 @@
+/* 
+    Created on : 5-mrt-2014, 14:44:09
+    Author     : Michel Koks <michel@nt2lab.nl>
+*/
+/*
+Here comes the text of your license
+Each line should be prefixed with 
+*/
+/* 
+    Created on : 5-mrt-2014, 18:50:26
+    Author     : Michel Koks <michel@nt2lab.nl>
+*/
+/* 
+    Created on : 5-mrt-2014, 14:47:23
+    Author     : Michel Koks <michel@nt2lab.nl>
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\000036}}
+[role=main] {
+  display: flex;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000310}}
+nav {
+  width: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000314}}
+section {
+  flex: 1;
+  background-color: #f2f2f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000317}}
+section h1 {
+  margin-left: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000322}}
+.year {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000327}}
+.month {
+  width: 30%;
+  min-width: 400px;
+  margin: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000332}}
+.month h1 {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000337}}
+.weekrows {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000342}}
+.weekrow {
+  flex: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000346}}
+.weekrows, .weekrow {
+  display: flex;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000351}}
+.day, .night, .weeknumber, .dayName {
+  color: black;
+  text-decoration: none;
+  display: block;
+  flex: 1;
+  min-width: 20px;
+  margin: 0.3rem;
+  padding: 25% 30%;
+  border-radius: 0.5rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000362}}
+.weeknumber {
+  background-color: #c4c4c4;
+  border: 0.1rem solid #c4c4c4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000367}}
+.day {
+  background-color: #ffff66;
+  border: 0.1rem solid #ffff55;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/agenda\/calender\/calender\.scss}line{font-family:\0000372}}
+.night {
+  background-color: #dddddd;
+  border: 0.1rem solid #eeeeee;
+}
+
+/*
+Here comes the text of your license
+Each line should be prefixed with 
+*/
+/* 
+    Created on : 5-mrt-2014, 18:50:32
+    Author     : Michel Koks <michel@nt2lab.nl>
+*/
+/*
+Here comes the text of your license
+Each line should be prefixed with 
+*/
+/* 
+    Created on : 5-mrt-2014, 18:50:38
+    Author     : Michel Koks <michel@nt2lab.nl>
+*/
+
+/*# sourceMappingURL=workflow.css.map */

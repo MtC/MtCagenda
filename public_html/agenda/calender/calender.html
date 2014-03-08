@@ -1,16 +1,33 @@
-<section data-ng-controller="CalenderCtrl">
-    <h1>{{thisYear}}</h1>
-    <div class="month" data-ng-repeat="monthnumber in [1,2,3,4,5,6,7,8,9,10,11,12]">
-        <h1>{{month[monthnumber - 1]}}</h1>
-        {{total[monthnumber]}}
-        <div data-ng-repeat="weekRow in days[monthnumber].week">
-            <div class="weekrows" data-ng-repeat="(weeknumber, dayObjects) in weekRow">
-                <div class="weeknumber">{{weeknumber}}</div>
-                <div data-ng-repeat="dayObject in dayObjects" class="weekrow">
-                    <span data-ng-show="dayObject.show" class="day">{{dayObject.day}}</span>
-                    <span data-ng-hide="dayObject.show" class="night">{{dayObject.day}}</span>
+<div role="main">
+    <nav>
+        <ul>
+            <li><a href="#!/agenda/index">home</a></li>
+            <li><span class="activePage">calender</span></li>
+            <li><a href="#!/agenda/week">weekoverzicht</a></li>
+            <li><a href="#!/agenda/date">dagoverzicht</a></li>
+        </ul>
+    </nav>
+    <section data-ng-controller="CalenderCtrl">
+        <h1><a href="#!/agenda/calender/{{lastYear}}">&lt;&lt;&lt;</a>{{thisYear}}<a href="#!/agenda/calender/{{nextYear}}">&gt;&gt;&gt;</a></h1>
+        <div class="year">
+            <div class="month" data-ng-repeat="monthnumber in [0,1,2,3,4,5,6,7,8,9,10,11]">
+                <h1>{{month[monthnumber]}}</h1>
+                <div data-ng-repeat="emptyRow in result[monthnumber]">
+                    <div class="weekrows">
+                        <div class="weekrow" data-ng-repeat="weekday in weekdays">
+                            <span data-ng-if="weekday === ''"></span>
+                            <span data-ng-if="weekday !== ''" class="dayName" >{{weekday}}</span>
+                        </div>
+                    </div>
+                    <div class="weekrows" data-ng-repeat="weekRow in emptyRow">
+                        <div class="weekrow" data-ng-repeat="(key, dayObject) in weekRow">
+                            <a href="#!/agenda/week/{{dayObject.week}}" data-ng-if="key === 0" class="weeknumber">{{dayObject.week < 10 ? 'w0' + dayObject.week : 'w' + dayObject.week}}</a>
+                            <a href="#!/agenda/date/{{dayObject.showDate}}" data-ng-if="dayObject.show" class="day">{{dayObject.day < 10 ? '0' + dayObject.day : dayObject.day}}</a>
+                            <span data-ng-if="!dayObject.show && key !== 0" class="night">{{dayObject.day}}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>

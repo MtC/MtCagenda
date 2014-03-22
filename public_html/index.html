@@ -1,17 +1,40 @@
  <!DOCTYPE html>
-<html>
+<html data-ng-app="MtCworkflow">
     <head>
         <title>MtCworkflow</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Limelight|Open+Sans:400italic,400,800" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
         <link rel="stylesheet" type="text/css" href="css/workflow.css" />
     </head>
-    <body data-ng-app="MtCworkflow">
-        <ul data-ng-controller="NavCtrl">
-            <li><a href="#!/index">home</a></li>
-            <li><a href="#!/agenda">agenda</a></li>
-        </ul>
-        <div data-ng-view></div>
+    <body data-ng-controller="AppCtrl">
+        <!--
+        <h1>
+            <span class="hoverWorkflow" data-ng-click="goHome()">Workflow</span><span class="hoverSlash" data-ng-show="showPath" data-ng-repeat="path in paths">/<span class="hoverPath">{{path}}</span></span></h1>
+        -->
+        <div role="menubar">
+            <ul>
+                <li>login</li>
+            </ul>
+        </div>
+        <div role="grid">
+            <div role="navigation">
+                <h1>Workflow</h1>
+                <nav>
+                    <ul>
+                        <li>link1</li>
+                        <li>link1</li>
+                        <li>link1</li>
+                        <li>link1</li>
+                    </ul>
+                </nav>
+            </div>
+            <div role="main">
+                <div></div>
+                <div data-ng-view></div>
+            </div>
+        </div>
         <script type="text/javascript" src="js/date/date.extension.js"></script>
         <script type="text/javascript" src="js/date/date.core.js"></script>
         <script type="text/javascript" src="js/vendor/angular.min.js"></script>
@@ -19,9 +42,10 @@
         <script type="text/javascript" src="js/vendor/angular-touch.min.js"></script>
         <script type="text/javascript" src="js/vendor/angular-translate.min.js"></script>
         <script type="text/javascript" src="angular.app.js"></script>
-        <script type="text/javascript" src="index/angular.index.js"></script>
-        <script type="text/javascript" src="agenda/angular.agenda.js"></script>
-        <script type="text/javascript" src="agenda/calender/angular.calender.js"></script>
-        <script type="text/javascript" src="agenda/date/angular.date.js"></script>
+        <script type="text/javascript" src="apps/index/angular.index.js"></script>
+        <script type="text/javascript" src="apps/agenda/angular.agenda.js"></script>
+        <script type="text/javascript" src="apps/agenda/calender/angular.calender.js"></script>
+        <script type="text/javascript" src="apps/agenda/date/angular.date.js"></script>
+        <script type="text/javascript" src="apps/agenda/appointment/angular.appointment.js"></script>
     </body>
 </html>

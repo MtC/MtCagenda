@@ -5,20 +5,20 @@ angular.module('MtCworkflow',['ngRoute', 'MtCindex', 'MtCagenda'])
 			when('/:app', {
 				templateUrl: function (url) {
                     //console.log(url.app);
-					return url.app + '/' + url.app + '.html';
+					return 'apps/' + url.app + '/' + url.app + '.html';
 				}
 			}).
             when('/:app/:sub', {
 				templateUrl: function (url) {
                     //console.log(url.app + ':' + url.sub);
                     //url.sub === 'today' ? url.sub = 'date' : (url.sub === 'this-week' ? 'week' : url.sub);
-					return url.app + '/' + url.sub + '/' + url.sub + '.html';
+					return 'apps/' + url.app + '/' + url.sub + '/' + url.sub + '.html';
 				}
 			}).
             when('/:app/:sub/:spec', {
 				templateUrl: function (url) {
                     //console.log(url.app + ':' + url.sub);
-					return url.app + '/' + url.sub + '/' + url.sub + '.html';
+					return 'apps/' + url.app + '/' + url.sub + '/' + url.sub + '.html';
 				}
 			}).
 			otherwise({ redirectTo: '/index/'});
@@ -36,9 +36,23 @@ angular.module('MtCworkflow',['ngRoute', 'MtCindex', 'MtCagenda'])
 		$httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
     })
     
-    .controller('NavCtrl',['$scope', '$location', function ($scope, $location) {
-        $scope.findTemplate = function (url) {
-            console.log(url);
-            $location.path(url);
+    .factory('HoveredLink', ['$rootScope', function ($rootScope) { 
+        var sPath = '';
+        return {
+            setPath: function (path) {
+                sPath = path;
+                $rootScope.$broadcast('showPath', sPath);
+            }
+        };
+    }])
+    
+    .controller('AppCtrl',['$scope', 'HoveredLink', '$location', function ($scope, HoveredLink, $location) {
+        $scope.showPath = false;
+        $scope.$on('showPath', function(event, sPath) {
+            $scope.paths = sPath;
+            $scope.showPath = sPath[0] === '' ? false : true;
+        });
+        $scope.goHome = function () {
+            $location.path('');
         };
     }]);

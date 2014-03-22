@@ -13,9 +13,9 @@
         <h1>
             <span class="hoverWorkflow" data-ng-click="goHome()">Workflow</span><span class="hoverSlash" data-ng-show="showPath" data-ng-repeat="path in paths">/<span class="hoverPath">{{path}}</span></span></h1>
         -->
-        <div role="menubar">
-            <ul>
-                <li>login</li>
+        <div >
+            <ul role="menubar">
+                <li role="presentation">login</li>
             </ul>
         </div>
         <div role="grid">
@@ -31,7 +31,7 @@
                 </nav>
             </div>
             <div role="main">
-                <div></div>
+                <div class="breadcrumbs" itemscope data-ng-controller="BreadcrumbsCtrl"></div>
                 <div data-ng-view></div>
             </div>
         </div>

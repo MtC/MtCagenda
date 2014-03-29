@@ -289,97 +289,114 @@ table {
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000320}}
 body {
   font-size: 62.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000322}}
-body > h1 {
-  font-family: Limelight, italic;
-  padding: 0.5rem 2rem;
-  font-size: 4rem;
-  font-weight: bold;
-  box-sizing: border-box;
-  margin: auto;
-  color: grey;
-  cursor: pointer;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000333}}
-body > h1:hover .hoverPath {
-  text-decoration: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000324}}
 [role="grid"] {
   width: 100%;
-  display: flex;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000326}}
 [role="grid"] [role="navigation"] {
-  width: 20rem;
+  width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000328}}
 [role="grid"] [role="navigation"] h1 {
   margin: 0;
   font-family: Limelight, italic;
-  font-size: 3rem;
+  color: gray;
+  font-size: 2.6rem;
   font-weight: bold;
   border-bottom: 0.5rem solid gray;
   width: 100%;
   box-sizing: border-box;
-  text-align: right;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   position: relative;
-  border-right: 0.5rem solid grey;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000341}}
 [role="grid"] [role="main"] {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: orange;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000363}}
-[role="grid"] [role="main"] > div:first-child {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000344}}
+[role="grid"] [role="main"] .breadcrumbs {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0 0 1.5rem;
+  height: 2rem;
+  font-family: Limelight, italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000351}}
+[role="grid"] [role="main"] .breadcrumbs:before {
+  position: absolute;
+  content: "";
+  top: -2.4rem;
+  width: 1rem;
   height: 3rem;
-  border-top: 0.5rem solid grey;
+  border-radius: 2rem;
+  border: 0.5rem solid white;
+  background-color: gray;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000365}}
 ul {
   width: 100%;
   list-style: none;
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000369}}
 ul li {
-  width: 17rem;
-  height: 1.5rem;
-  background-color: blue;
-  margin-top: 1.7rem;
+  margin: 1rem 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000371}}
+ul li span {
+  font-family: Limelight, italic;
+  font-size: 1.4rem;
+  color: gray;
+  cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000380}}
 [role="menubar"] {
   width: 100%;
-  height: 4rem;
+  height: 1.6rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000389}}
-.hoverWorkflow:hover {
-  color: #012841;
-  text-decoration: underline;
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000387}}
+nav {
+  display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000391}}
 .hoverSlash {
   font-size: 2rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\0000395}}
 .hoverPath {
-  text-decoration: underline;
+  border-bottom: 0.3rem solid red;
+  padding-bottom: 0.4rem;
+  cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003101}}
+[role="menubar"] {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003103}}
+[role="menubar"] li {
+  float: right;
+  margin: 0 1.5rem;
+  cursor: default;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003107}}
+[role="menubar"] li > span {
+  font-size: 1.4rem;
+  font-family: Limelight, italic;
+  color: gray;
 }
 
 /* 
@@ -387,199 +404,196 @@ ul li {
     Author     : Michel Koks <michel@nt2lab.nl>
 */
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\000036}}
-body section {
-  background-color: white;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000310}}
 #appWrap {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-width: 23rem;
-  margin: auto;
+  width: 98%;
+  margin: 5% 1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000311}}
 .appItem {
   width: 100%;
-  max-width: 22rem;
-  margin: 0 0.5rem 2rem 0.5rem;
+  margin-bottom: 2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000314}}
 .appItem .ovalWrap, .appItem .oval, .appItem .appWindowLeftHead, .appItem .appWindowLeftBody, .appItem .appWindowRightLine, .appItem .appWindowRightShortLine, .appItem .appWindowAgendaBlock, .appItem .appWindowRightThinLine, .appItem .appWindowRightThinShortLine, .appItem .appWindowPuzzle, .appItem .appWindowPuzzle:after {
   background-color: gray;
   transition: background-color 0.5s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000318}}
 .appItem .appWindow, .appItem .appWindowLeftCheckbox {
   border-color: gray;
   transition: border-color 0.5s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000322}}
 .appItem .appWindowRightShortLine span {
   color: gray;
   transition: color 0.5s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000337}}
-.appItem:hover .ovalWrap, .appItem:hover .oval, .appItem:hover .appWindowLeftHead, .appItem:hover .appWindowLeftBody, .appItem:hover .appWindowRightLine, .appItem:hover .appWindowRightShortLine, .appItem:hover .appWindowAgendaBlock, .appItem:hover .appWindowRightThinLine, .appItem:hover .appWindowRightThinShortLine, .appItem:hover .appWindowPuzzle, .appItem:hover .appWindowPuzzle:after {
-  background-color: #012841;
-  transition: background-color 0.5s linear;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000341}}
-.appItem:hover .appWindow, .appItem:hover .appWindowLeftCheckbox {
-  border-color: #012841;
-  transition: border-color 0.5s linear;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000345}}
-.appItem:hover .appWindowRightShortLine span {
-  color: #012841;
-  transition: color 0.5s linear;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000349}}
-.appItem:hover i {
-  color: green;
-  transition: color 0.5s linear;
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000328}}
 .ovalWrap {
   width: 100%;
-  height: 4rem;
+  height: 0;
+  padding-bottom: 15%;
   display: flex;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000336}}
 .oval {
   position: relative;
-  top: -20px;
+  top: -50%;
   width: 5%;
-  height: 3rem;
-  border-radius: 20px;
+  height: 0;
+  padding-bottom: 10%;
+  border-radius: 2rem;
   margin: auto;
   border: 0.5rem solid white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000347}}
 .appWindow {
   display: flex;
   width: 100%;
-  height: 15rem;
+  height: 0;
+  padding-bottom: 60%;
   box-sizing: border-box;
   border-width: 0.5rem;
   border-style: solid;
   background-color: #f2f2f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000358}}
 .appWindowLeft {
   flex: 1;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000363}}
+.appWindowLeftHead {
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
+  background-color: red;
+  border-radius: 60%;
+  margin: 35% auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000372}}
+.appWindowLeftBody {
+  width: 80%;
+  height: 0;
+  padding-bottom: 40%;
+  border-radius: 80% 80% 0 0;
+  margin: -40% auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000380}}
+.appWindowRight, .appWindowRightLarge {
+  box-sizing: border-box;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000382}}
+.appWindowRight .appWindowRightLine:first-child, .appWindowRightLarge .appWindowRightLine:first-child {
+  margin-top: 38%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000387}}
-.appWindowLeftHead {
-  width: 5rem;
-  height: 5rem;
-  box-sizing: border-box;
-  border-radius: 5rem;
-  margin: 3rem auto;
+.appWindowRight {
+  flex: 1.4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000391}}
+.appWindowRightLarge {
+  flex: 3;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\0000395}}
-.appWindowLeftBody {
-  height: 4rem;
-  width: 8rem;
-  border-radius: 8rem 8rem 0 0;
-  margin: -3.5rem auto;
+.appWindowRightLine, .appWindowRightShortLine {
+  height: 0;
+  border-radius: 2rem;
+  margin: 4% 0;
+  padding-bottom: 15%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003102}}
-.appWindowRight {
-  flex: 1.4;
-  box-sizing: border-box;
-  padding: 1rem 0.5rem;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003106}}
-.appWindowRight .appWindowRightLine:first-child {
-  margin-top: 3rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003111}}
-.appWindowRightLine, .appWindowRightShortLine {
-  height: 2rem;
-  border-radius: 2rem;
-  margin: 0.5rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003117}}
 .appWindowRightLine, .appWindowRightThinShortLine {
   width: 90%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003106}}
+.appWindowRightThinShortLine {
+  width: 80%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003110}}
 .appWindowRightShortLine {
   width: 70%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003112}}
 .appWindowRightShortLine > span {
   position: relative;
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  margin-top: -0.5rem;
+  width: 25%;
+  height: 0;
+  padding-bottom: 22%;
   background-color: #f2f2f2;
   border-radius: 2rem;
   left: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003124}}
 .appWindowRightShortLine > span > span {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  display: inline-block;
   font-weight: bold;
-  line-height: 2.5rem;
-  padding-left: 0.35rem;
+  line-height: 1.8rem;
+  padding: 0 10%;
+  margin: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003136}}
 .appWindowRightThinLine, .appWindowRightThinShortLine {
-  height: 1rem;
+  height: 0;
+  padding-bottom: 6%;
   border-radius: 1rem;
-  margin: 0.3rem;
+  margin: 5% 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003143}}
+.appWindowRightThinShortLine {
+  margin-bottom: 10%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003147}}
-.appWindowRightThinShortLine {
-  margin-bottom: 2.2rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003151}}
 .appWindowLeftCheckbox {
-  width: 3rem;
-  height: 3rem;
+  width: 52%;
+  height: 0;
+  padding-bottom: calc(100% * 2 / 3 - 1rem);
   border-style: solid;
-  border-width: 0.5rem;
-  margin: 0.5rem auto;
+  border-width: 0.4rem;
+  margin: 10% auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003154}}
 .appWindowLeftCheckbox i {
   color: gray;
   transition: color 0.5s linear;
+  -webkit-transform: scale(1);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003161}}
 .appWindowAgendaColumn {
   flex: 1;
   margin: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003166}}
 .appWindowAgendaBlock {
-  width: 70%;
-  height: 3rem;
-  margin: 1rem auto;
+  width: 80%;
+  height: 0;
+  padding-bottom: 64%;
+  margin: 15% auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003173}}
 .appWindowWhole {
   width: 14rem;
   height: 14rem;
@@ -588,7 +602,7 @@ body section {
   flex-wrap: wrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003181}}
 .appWindowPuzzle {
   position: relative;
   width: 5rem;
@@ -597,7 +611,7 @@ body section {
   box-sizing: border-box;
   border-radius: 0.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003188}}
 .appWindowPuzzle:before {
   position: absolute;
   content: '';
@@ -607,7 +621,7 @@ body section {
   border-radius: 1.5rem;
   background-color: #f2f2f2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003197}}
 .appWindowPuzzle:after {
   position: absolute;
   content: '';
@@ -617,61 +631,61 @@ body section {
   border-radius: 1.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003207}}
 .puzzlePieceUpperLeft {
   -webkit-transform: rotate(9deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003209}}
 .puzzlePieceUpperLeft:before {
   bottom: -0.3rem;
   left: calc((100% - 2rem)/2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003213}}
 .puzzlePieceUpperLeft:after {
   right: -1.1rem;
   top: 2rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003219}}
 .puzzlePieceBottomLeft {
   -webkit-transform: rotate(-6deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003221}}
 .puzzlePieceBottomLeft:before {
   right: -0.3rem;
   top: calc((100% - 2rem)/2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003225}}
 .puzzlePieceBottomLeft:after {
   top: -1.2rem;
   left: calc((100% - 2rem)/2);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003232}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003231}}
 .puzzlePieceUpperRight {
   -webkit-transform: rotate(-12deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003233}}
 .puzzlePieceUpperRight:before {
   left: -0.4rem;
   top: 2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003237}}
 .puzzlePieceUpperRight:after {
   bottom: -1.2rem;
   left: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003243}}
 .puzzlePieceBottomRight {
   -webkit-transform: rotate(-1deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003245}}
 .puzzlePieceBottomRight:before {
   top: -0.3rem;
   left: 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/index\/index\.scss}line{font-family:\00003249}}
 .puzzlePieceBottomRight:after {
   left: -1.2rem;
   top: calc((100% - 2rem)/2);
@@ -696,7 +710,7 @@ Each line should be prefixed with
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000310}}
 nav {
-  width: 200px;
+  width: 20rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000314}}
@@ -723,26 +737,27 @@ section h1 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000332}}
 .month h1 {
+  font-family: Limelight, italic;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000338}}
 .weekrows {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000343}}
 .weekrow {
   flex: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000347}}
 .weekrows, .weekrow {
   display: flex;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000352}}
 .day, .night, .weeknumber, .dayName {
   color: black;
   text-decoration: none;
@@ -754,19 +769,19 @@ section h1 {
   border-radius: 0.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000363}}
 .weeknumber {
   background-color: #c4c4c4;
   border: 0.1rem solid #c4c4c4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000368}}
 .day {
   background-color: #ffff66;
   border: 0.1rem solid #ffff55;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/apps\/agenda\/calender\/calender\.scss}line{font-family:\0000373}}
 .night {
   background-color: #dddddd;
   border: 0.1rem solid #eeeeee;
@@ -788,5 +803,103 @@ Each line should be prefixed with
     Created on : 5-mrt-2014, 18:50:38
     Author     : Michel Koks <michel@nt2lab.nl>
 */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003133}}
+  [role="grid"] {
+    display: flex;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003135}}
+  [role="grid"] [role="navigation"] {
+    width: 16rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003137}}
+  [role="grid"] [role="navigation"] h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 1.5rem 1rem 1rem 1rem;
+    position: relative;
+    border-right: 0.5rem solid gray;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003147}}
+  [role="grid"] [role="main"] {
+    flex: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003149}}
+  [role="grid"] [role="main"] .breadcrumbs {
+    position: relative;
+    padding: 1.5rem;
+    height: 4rem;
+    font-family: Limelight, italic;
+    border-top: 0.5rem solid grey;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003156}}
+  [role="grid"] [role="main"] .view {
+    padding: 1.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003161}}
+  [role="grid"] [role="menubar"] li:hover > span {
+    border-bottom: 0.3rem solid red;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003167}}
+  nav {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003172}}
+  ul li:hover span {
+    border-bottom: 0.3rem solid red;
+    color: #012841;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003179}}
+  .hoverWorkflow:hover {
+    color: #012841;
+    padding-bottom: 0;
+    border-bottom: 0.3rem solid red;
+    cursor: default;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003187}}
+  #appWrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 23rem;
+    margin: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003195}}
+  .appItem {
+    min-width: 22rem;
+    margin: 0 0.5rem 2rem 0.5rem;
+    flex: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003200}}
+  .appItem:hover .ovalWrap, .appItem:hover .oval, .appItem:hover .appWindowLeftHead, .appItem:hover .appWindowLeftBody, .appItem:hover .appWindowRightLine, .appItem:hover .appWindowRightShortLine, .appItem:hover .appWindowAgendaBlock, .appItem:hover .appWindowRightThinLine, .appItem:hover .appWindowRightThinShortLine, .appItem:hover .appWindowPuzzle, .appItem:hover .appWindowPuzzle:after {
+    background-color: #012841;
+    transition: background-color 0.5ss linear;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003204}}
+  .appItem:hover .appWindow, .appItem:hover .appWindowLeftCheckbox {
+    border-color: #012841;
+    transition: border-color 0.5s linear;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003208}}
+  .appItem:hover .appWindowRightShortLine span {
+    color: #012841;
+    transition: color 0.5s linear;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/web\/gitRepository\/MtCagenda\/public_html\/scss\/workflow\.scss}line{font-family:\00003212}}
+  .appItem:hover i {
+    color: green;
+    transition: color 0.5s linear;
+  }
+}
 
 /*# sourceMappingURL=workflow.css.map */

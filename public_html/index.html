@@ -15,24 +15,26 @@
         -->
         <div >
             <ul role="menubar">
-                <li role="presentation">login</li>
+                <li role="presentation" data-ng-click="goto('login')"><span>login</span></li>
             </ul>
         </div>
         <div role="grid">
             <div role="navigation">
-                <h1>Workflow</h1>
+                <h1><span class="hoverWorkflow" data-ng-click="goHome()">Workflow</span></h1>
                 <nav>
                     <ul>
-                        <li>link1</li>
-                        <li>link1</li>
-                        <li>link1</li>
-                        <li>link1</li>
+                        <li><span>link1</span></li>
+                        <li><span>link1</span></li>
+                        <li><span>link1</span></li>
+                        <li><span>link1</span></li>
                     </ul>
                 </nav>
             </div>
             <div role="main">
-                <div class="breadcrumbs" itemscope data-ng-controller="BreadcrumbsCtrl"></div>
-                <div data-ng-view></div>
+                <div class="breadcrumbs" itemscope data-ng-controller="BreadcrumbsCtrl">
+                    <span class="hoverSlash" data-ng-show="showPath" data-ng-repeat="path in paths">/<span class="hoverPath">{{path}}</span></span>
+                </div>
+                <div class="view" data-ng-view></div>
             </div>
         </div>
         <script type="text/javascript" src="js/date/date.extension.js"></script>

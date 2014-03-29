@@ -8,7 +8,7 @@
 }
 
 nav {
-    width: 200px;
+    width: 20rem;
 }
 
 section {
@@ -30,6 +30,7 @@ section {
     margin: 1%;
     //background-color: lightblue;
     h1 {
+        font-family: $font-family-display;
         text-align: center;
     }
 }

@@ -5,11 +5,13 @@
 
 @import "vendor/normalize/normalize";
 
+$mainDrawColor:     grey;
 $appWrapBg:         white;
 $windowColor:       grey;
 $windowBg:          #f2f2f2;
 $windowInner:       grey;
 $windowColorHover: #012841;
+$font-family-display: Limelight, italic;
 
 html {
     
@@ -19,50 +21,43 @@ body {
     font-size: 62.5%;
 }
 
-body > h1 {
-    font-family: Limelight, italic;
-    //max-width: 1200px;
-    padding: 0.5rem 2rem;
-    font-size: 4rem;
-    font-weight: bold;
-    box-sizing: border-box;
-    margin: auto;
-    color: grey;
-    cursor: pointer;
-    &:hover {
-        .hoverPath {
-            text-decoration: none;
-        }
-    }
-}
-
 [role="grid"] {
-    width: 100%;
-    display: flex;
+    width: 100%;  
     [role="navigation"] {
-        width: 20rem;
+        width: 100%;
         h1 {
             margin: 0;
-            font-family: Limelight, italic;
-            font-size: 3rem;
+            font-family: $font-family-display;
+            color: $mainDrawColor;
+            font-size: 2.6rem;
             font-weight: bold;
-            border-bottom: 0.5rem solid $windowColor;
+            border-bottom: 0.5rem solid $mainDrawColor;
             width: 100%;
             box-sizing: border-box;
-            text-align: right;
-            padding: 1rem;
+            padding: 1.5rem 1rem 1rem 1rem;
             position: relative;
-            border-right: 0.5rem solid grey;
         }
     }
     [role="main"] {
-        flex: 1;
         display: flex;
         flex-direction: column;
-        background-color: orange;
-        > div:first-child {
-            height: 3rem;
-            border-top: 0.5rem solid grey;
+        .breadcrumbs {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 1rem 0 0 1.5rem;
+            height: 2rem;
+            font-family: $font-family-display;
+            &:before {
+                position: absolute;
+                content: "";
+                top: -2.4rem;
+                width: 1rem;
+                height: 3rem;
+                border-radius: 2rem;
+                border: 0.5rem solid $appWrapBg;
+                background-color: $mainDrawColor;
+            }
         }
     }
 }
@@ -72,24 +67,25 @@ ul {
     list-style:none;
     padding-left:0;
     li {
-        width: 17rem;
-        height: 1.5rem;
-        background-color: blue;
-        margin-top: 1.7rem;
+        margin: 1rem 2rem;
+        span {
+            font-family: $font-family-display;
+            font-size: 1.4rem;
+            color: $windowColor;
+            cursor: default;
+        }
     }
 }
 
 [role="menubar"] {
     width: 100%;
-    height: 4rem;
-    //border-bottom: 0.5rem solid $windowColor;
+    height: 1.6rem;
 }
 
-.hoverWorkflow {
-    &:hover {
-        color: #012841;
-        text-decoration: underline;
-    }
+
+
+nav {
+    display: none;
 }
 
 .hoverSlash {
@@ -97,7 +93,23 @@ ul {
 }
 
 .hoverPath {
-    text-decoration: underline;
+    border-bottom: 0.3rem solid red;
+    padding-bottom: 0.4rem;
+    cursor: default;
+}
+
+[role="menubar"] {
+    display: inline-block;
+    li {
+        float: right;
+        margin: 0 1.5rem;
+        cursor: default;
+        > span {
+            font-size: 1.4rem;
+            font-family: $font-family-display;
+            color: $windowColor;
+        }
+    }
 }
 
 @import "../apps/index/index",
@@ -105,3 +117,103 @@ ul {
         "../apps/agenda/calender/calender",
         "../apps/agenda/date/date",
         "../apps/agenda/week/week";
+        
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    [role="grid"] {
+        display: flex;
+        [role="navigation"] {
+            width: 16rem;
+            h1 {
+                margin: 0;
+                font-size: 2.6rem;
+                font-weight: bold;
+                text-align: right;
+                padding: 1.5rem 1rem 1rem 1rem;
+                position: relative;
+                border-right: 0.5rem solid $windowColor;
+            }
+        }
+        [role="main"] {
+            flex: 1;
+            .breadcrumbs {
+                position: relative;
+                padding: 1.5rem;
+                height: 4rem;
+                font-family: $font-family-display;
+                border-top: 0.5rem solid grey;
+            }
+            .view {
+                padding: 1.5rem;
+            }
+        }
+        [role="menubar"] li {
+            &:hover > span{
+                border-bottom: 0.3rem solid red;
+            }
+        }
+    }
+    
+    nav {
+        display: block;
+    }
+    
+    ul li {
+        &:hover span {
+            border-bottom: 0.3rem solid red;
+            color: #012841;
+        }
+    }
+    
+    .hoverWorkflow {
+        &:hover {
+            color: #012841;
+            padding-bottom: 0;
+            border-bottom: 0.3rem solid red;
+            cursor: default;
+        }
+    }
+    
+    #appWrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 23rem;
+        margin: auto;
+    }
+    
+    .appItem {
+        min-width: 22rem;
+        margin: 0 0.5rem 2rem 0.5rem;
+        flex: 1;
+        &:hover {
+            .ovalWrap, .oval, .appWindowLeftHead, .appWindowLeftBody, .appWindowRightLine, .appWindowRightShortLine, .appWindowAgendaBlock, .appWindowRightThinLine, .appWindowRightThinShortLine, .appWindowPuzzle, .appWindowPuzzle:after {
+                background-color: $windowColorHover;
+                transition: background-color 0.5ss linear;
+            }
+            .appWindow, .appWindowLeftCheckbox {
+                border-color: $windowColorHover;
+                transition: border-color 0.5s linear;
+            }
+            .appWindowRightShortLine span {
+                color: $windowColorHover;
+                transition: color 0.5s linear;
+            }
+            i {
+                color: green;
+                transition: color 0.5s linear;
+            }
+        }
+    }
+
+}

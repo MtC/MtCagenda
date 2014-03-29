@@ -55,4 +55,7 @@ angular.module('MtCworkflow',['ngRoute', 'MtCindex', 'MtCagenda'])
         $scope.goHome = function () {
             $location.path('');
         };
+        $scope.goto = function (url) {
+            $location.path(url);
+        };
     }]);

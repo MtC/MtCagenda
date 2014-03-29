@@ -52,6 +52,7 @@
     box-sizing: border-box;
     border-width: 0.5rem;
     border-style: solid;
+    border-top-width: 4rem;
     background-color: $windowBg;
 }
 
@@ -114,10 +115,7 @@
         display: inline-block;
         width: 25%;
         height: 0;
-        //padding: 0 auto 22% auto;
         padding-bottom: 22%;
-        //background-color: red;
-        //margin-top: -0.5rem;
         background-color: $windowBg;
         border-radius: 2rem;
         left: 50%;

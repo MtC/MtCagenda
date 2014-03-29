@@ -1,11 +1,13 @@
 <section id="appWrap" data-ng-controller="IndexCtrl">
     <div id="appAgenda" class="appItem" data-ng-click="goto('agenda')" data-ng-mouseenter="mouseEnter('agenda')" data-ng-mouseleave="mouseLeave()">
+        <!--
         <div class="ovalWrap">
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
         </div>
+        -->
         <div class="appWindow">
             <div class="appWindowAgendaColumn" data-ng-repeat="row in [0,1,2,4]">
                 <div class="appWindowAgendaBlock" data-ng-repeat="block in [0,1,2]"></div>
@@ -13,12 +15,14 @@
         </div>
     </div>
     <div id="appContact" class="appItem" data-ng-click="goto('contact')" data-ng-mouseenter="mouseEnter('contact')" data-ng-mouseleave="mouseLeave()">
+        <!--
         <div class="ovalWrap">
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
         </div>
+        -->
         <div class="appWindow">
             <div class="appWindowLeft">
                 <div class="appWindowLeftHead"></div>
@@ -32,13 +36,14 @@
         </div>
     </div>
     <div id="appTodo" class="appItem" data-ng-click="goto('todo')" data-ng-mouseenter="mouseEnter('todo')" data-ng-mouseleave="mouseLeave()">
+        <!--
         <div class="ovalWrap">
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
         </div>
-        <div class="appWindow">
+        -->>        <div class="appWindow">
             <div class="appWindowLeft">
                 <div class="appWindowLeftCheckbox"><i class="fa fa-5x fa-check"></i></div>
                 <div class="appWindowLeftCheckbox"></div>
@@ -55,12 +60,14 @@
         </div>
     </div>
     <div id="appProject" class="appItem" data-ng-click="goto('project')" data-ng-mouseenter="mouseEnter('project')" data-ng-mouseleave="mouseLeave()">
+        <!--
         <div class="ovalWrap">
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
             <div class="oval"></div>
         </div>
+        -->
         <div class="appWindow">
             <div class="appWindowWhole">
                 <div class="appWindowPuzzle puzzlePieceUpperLeft"></div>
